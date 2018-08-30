@@ -11,25 +11,28 @@
 <body>
 
 <div class="container">
+
+    <!-- UPDATE BUTTON MODAL  -->
     <div class="modal hide">
                 <div class="modal-container">
                     <div class="formUpdate">
                         <form  class="modal-form">
-                            <label for="updateName" >Student Name</label>
+                            <h3>Update Information</h3>
+                            <label for="updateName" >Name:</label>
                             <div class="input-group form-group">
                                <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-user"></span>
                                 </span>
-                                <input type="text" class="form-control updateName" id="updateName" placeholder="Student Name">
+                                <input type="text" class="form-control updateName" id="updateName" placeholder="Name">
                             </div>
-                            <label for="updateCourse" >Course</label>
+                            <label for="updateCourse" >Course:</label>
                             <div class="input-group form-group">
                                <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-list-alt"></span>
                                 </span>
                                 <input type="text" class="form-control updateCourse" id="updateCourse" placeholder="Course">
                             </div>
-                            <label for="updateGrade" >Grade</label>
+                            <label for="updateGrade" >Grade:</label>
                             <div class="input-group form-group">
                                <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-education"></span>
@@ -45,11 +48,11 @@
                 </div>
     </div>
     <div class="">
-        <!-- only show this element when it isnt on mobile -->
+        <!-- DESKTOP VIEW -->
         <h1 class="hidden-xs hidden-sm page-header">Student Grade Table
             <small class="hidden-xs hidden-sm col-md-offset-5">Grade Average : <span class="avgGrade label label-default">0</span></small>
         </h1>
-        <!-- only show this element when the user gets to a mobile version -->
+        <!-- MOBILE VIEW -->
         <h3 class="visible-xs visible-sm col-xs-12 page-header">Student Grade Table
             <small class="visible-xs visible-sm col-xs-12">Grade Average : <span class="avgGrade label label-default">0</span></small>
         </h3>
@@ -60,21 +63,21 @@
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-user"></span>
             </span>
-            <input type="text" class="form-control" name="studentName" id="studentName" placeholder="Student Name">
+            <input type="text" class="form-control" name="studentName" id="studentName" placeholder="Name">
         </div>
         <div class="input-group form-group">
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-list-alt"></span>
             </span>
             <input type="text" class="form-control" name="course" id="course"
-                   placeholder="Student Course">
+                   placeholder="Course">
         </div>
         <div class="input-group form-group">
             <span class="input-group-addon">
                 <span class="glyphicon glyphicon-education"></span>
             </span>
             <input type="text" class="form-control" name="studentGrade" id="studentGrade"
-                   placeholder="Student Grade">
+                   placeholder="Grade">
         </div>
         <button type="button" class="btn btn-success" id="add" onclick="">Add</button>
         <button type="button" class="btn btn-default" id="cancel" onclick="">Cancel</button>
